@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+}
+
+.stars__star_grey {
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  background-image: url('Img/Star-grey.png'); /* Replace with actual star image URL */
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 2px; /* Adjust distance as needed */
+}
+
+.stars__star_yellow {
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  background-image: url('Img/Star-yellow.png'); /* Replace with actual star image URL */
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 2px; /* Adjust distance as needed */
+}
+
+/* Modifier classes */
+.stars--0 .stars__star:nth-child(-n+0),
+.stars--1 .stars__star:nth-child(-n+1),
+.stars--2 .stars__star:nth-child(-n+2),
+.stars--3 .stars__star:nth-child(-n+3),
+.stars--4 .stars__star:nth-child(-n+4),
+.stars--5 .stars__star:nth-child(-n+5) {
+  opacity: 1;
+}
